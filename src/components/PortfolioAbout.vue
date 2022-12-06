@@ -47,7 +47,7 @@ export default {
 
 .about_wrapper{
   background-color: #1a1a1a;
-  padding-bottom: 15vh;
+  padding-bottom: 30vh;
   padding-right: 2vw;
   padding-left: 2vw;
 }

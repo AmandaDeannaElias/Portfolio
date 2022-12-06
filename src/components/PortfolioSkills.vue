@@ -3,15 +3,47 @@
       <div class="h3_skills_section">
         <h3>Skills</h3>
       </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <div class="skill_name">JS</div>
+      <div class="card_rows">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="skill_name">JS</div>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                One of the first languages I learned was Vanilla JavaScript during my time at Humber College.
+                I started using this language to simply manipulate the DOM, and currently use it to consume APIs, 
+                create custom validation and add emphasis to design.
+              </p>
+            </div>
           </div>
-          <div class="flip-card-back">
-            <h1>John Doe</h1>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="skill_name">HTML</div>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  HTML was the very first language I worked with as many developers do. It gets a bad reputation 
+                  for being a boring language, but we wouldn't have webpages without it. It's constantly evolving 
+                  to become more accessible; that's something I appreciate.
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="skill_name">CSS</div>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                CSS has become one of my favourite languages to work with. There are endless possibilities for design 
+                including animations and responsiveness. CSS is one of the most powerful tools to engage users and invoke
+                creativity. HTML is the canvas, and CSS is the paint.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -53,6 +85,7 @@ h3{
   line-height: 1em;
   padding-right: 2vw;
   padding-top: 2vw;
+  padding-bottom: 10vh;
 }
 
 .h3_column{
@@ -69,11 +102,17 @@ h3{
 .flip-card {
   background-color: transparent;
   width: 250px;
-  height: 200px;
+  height: 225px;
   perspective: 1000px;
+  cursor: pointer;
 }
 
-/* This container is needed to position the front and back side */
+.card_rows{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -83,12 +122,10 @@ h3{
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -105,18 +142,16 @@ h3{
   align-items: flex-end;
   justify-content: flex-end;
   padding-right: 30px;
-  padding-bottom: 20px;
 }
 
-/* Style the back side */
 .flip-card-back {
   background-color: #dbd7d0;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding-right: 30px;
-  padding-bottom: 20px;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
   transform: rotateY(180deg);
+  font-size: 1em;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .skill_name{
