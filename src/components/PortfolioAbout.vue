@@ -1,5 +1,5 @@
 <template>
-    <div class="about_wrapper fade fadeOut">
+    <div class="about_wrapper fade fadeOut" id="about">
       <div class="about_list_container">
         <div class="about_border">
           <h3>About</h3>
@@ -20,7 +20,7 @@
             <p> Free time includes music, cooking, gaming and exploring other cultures</p>
           </div>
         </div>
-        <img src="/images/Me.jpg" height=400/>
+        <img src="/images/Me.jpg" height=300/>
       </div>
     </div>
 </template>
@@ -47,7 +47,7 @@ export default {
 
 .about_wrapper{
   background-color: #1a1a1a;
-  padding-bottom: 30vh;
+  padding-bottom: 15vh;
   padding-right: 2vw;
   padding-left: 2vw;
 }
@@ -55,7 +55,7 @@ export default {
 .about_title{
   display: flex;
   justify-content: space-around;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
 }
 
 .about_border{
@@ -63,6 +63,7 @@ export default {
   padding-bottom: 2vh;
   border-left: 2px #dbd7d0 solid; 
   border-bottom: 2px #dbd7d0 solid;
+  height: 300px;
 }
 
 .about_list_container{
@@ -76,25 +77,14 @@ export default {
   flex-direction: row;
 }
 
-.animation{
-  animation: fadeIn ease 4s;
-  -webkit-animation: fadeIn ease 4s;
-  -moz-animation: fadeIn ease 4s;
-  -o-animation: fadeIn ease 4s;
-  -ms-animation: fadeIn ease 4s;
-  background-color: #dbd7d0;
-  padding-top: 12vh;
-  padding-bottom: 12vh;
-}
-
 h3{
   font-family: 'Marcellus', serif;
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: normal;
   color:#dbd7d0;
   line-height: 1em;
   padding-right: 2vw;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
 }
 
 img{
@@ -111,7 +101,7 @@ img{
 
 p{
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: normal;
   color:#dbd7d0;
   line-height: 1.5em;

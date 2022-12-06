@@ -1,5 +1,6 @@
 <template>
     <div class="bio_wrapper fade fadeOut">
+      <!-- <img class="bg_image" src="/images/digital.jpg" /> -->
       <div class="animation">
         <h4 class="h4">Embracing the Digital Age</h4>
         <div class="bio">
@@ -37,10 +38,12 @@ export default {
   background-color: #1a1a1a;
   display: flex;
   justify-content: center;
-  padding-top: 10vh;
-  padding-bottom: 15vh;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
   padding-right: 9vw;
   padding-left: 9vw;
+  position: relative;
+  overflow: hidden;
 }
 
 .animation{
@@ -52,6 +55,8 @@ export default {
   background-color: #dbd7d0;
   padding-top: 12vh;
   padding-bottom: 12vh;
+  opacity: 100%;
+  position: relative;
 }
 
 
@@ -75,6 +80,18 @@ p{
 .bio{
   padding-left: 2vw;
   padding-right: 2vw;
+}
+
+.bg_image{
+  opacity: 0.2;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 130vh;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 @keyframes fadeIn {
@@ -128,7 +145,7 @@ p{
 
 .fadeIn{ 
   opacity: 1; 
-}
+} 
 
 .fade{
   transition: 0.8s ease-in;

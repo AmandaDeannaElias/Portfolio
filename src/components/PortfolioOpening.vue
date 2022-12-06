@@ -33,15 +33,19 @@ export default {
 
 .opening_wrapper{
   display: flex;
-  padding-top: 15vh;
   padding-right: 2vw;
   padding-left: 2vw;
-  padding-bottom: 5vw;
+  padding-bottom: 15vh;
+  position: relative;
 }
 
 .image_div{
   width: 100%;
-  position: relative;
+  opacity: 100%;
+}
+
+.image_div img{
+  opacity: 100%;
 }
 
 .image_animation{
@@ -52,30 +56,6 @@ export default {
   -ms-animation: fadeIn ease 3s;
 }
 
-.first_h3_animation{
-  animation: fadeIn ease 4s;
-  -webkit-animation: fadeIn ease 4s;
-  -moz-animation: fadeIn ease 4s;
-  -o-animation: fadeIn ease 4s;
-  -ms-animation: fadeIn ease 4s;
-}
-
-.second_h3_animation{
-  animation: fadeIn ease 6s;
-  -webkit-animation: fadeIn ease 6s;
-  -moz-animation: fadeIn ease 6s;
-  -o-animation: fadeIn ease 6s;
-  -ms-animation: fadeIn ease 6s;
-}
-
-.third_h3_animation{
-  animation: fadeIn ease 8s;
-  -webkit-animation: fadeIn ease 8s;
-  -moz-animation: fadeIn ease 8s;
-  -o-animation: fadeIn ease 8s;
-  -ms-animation: fadeIn ease 8s;
-}
-
 h3{
   font-family: 'Marcellus', serif;
   font-size:2.5em;
@@ -84,18 +64,14 @@ h3{
   text-align:right;
   line-height: 1em;
   padding-right: 2vw;
-  padding-top: 2vw;
+  padding-top:2vh;
 }
 
 .h3_column{
   flex-direction: column;
   border-right: 2px #dbd7d0 solid; 
   border-top: 2px #dbd7d0 solid;
-  animation: fadeIn ease 9s;
-  -webkit-animation: fadeIn ease 9s;
-  -moz-animation: fadeIn ease 9s;
-  -o-animation: fadeIn ease 9s;
-  -ms-animation: fadeIn ease 9s;
+  opacity: 100%;
 }
 
 img{
@@ -164,4 +140,5 @@ img{
 .fade{
   transition: 0.8s ease-in;
 }
+
 </style>

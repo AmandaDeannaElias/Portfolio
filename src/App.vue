@@ -3,6 +3,7 @@
   <PortfolioOpening/>
   <PortfolioBio/>
   <PortfolioAbout/>
+  <PortfolioSkills/>
 </template>
 
 <script>
@@ -10,6 +11,7 @@ import PortfolioHeader from './components/PortfolioHeader.vue'
 import PortfolioOpening from './components/PortfolioOpening.vue'
 import PortfolioBio from './components/PortfolioBio.vue'
 import PortfolioAbout from './components/PortfolioAbout.vue'
+import PortfolioSkills from './components/PortfolioSkills.vue'
 
 export default {
   name: 'App',
@@ -18,16 +20,18 @@ export default {
     PortfolioOpening,
     PortfolioBio,
     PortfolioAbout,
+    PortfolioSkills,
   },
   
   mounted: function(){
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.7
+      threshold: 0.5
     };
 
     function observerCallback(entries) {
+
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.replace('fadeOut', 'fadeIn');
@@ -48,12 +52,15 @@ export default {
 #app {
   text-align: center;
 }
+
 body{
   background-color: #1a1a1a;
 }
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 </style>
