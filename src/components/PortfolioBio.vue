@@ -5,7 +5,7 @@
         <h4 class="h4">Embracing the Digital Age</h4>
         <div class="bio">
           <p></p>
-          <p>My journey into web development came at a time where I was craving creative expression.</p>
+          <p>My journey into web development came at a time when I was craving creative expression.</p>
           <p>Through mentoring from incredible professors, hard work, long hours and dedication, I quickly became addicted to coding.</p>
           <p>Now working in web development, the satisfaction of creating, debugging and collaborating is the real reward.</p>
           <p>There is a solution to every problem. There is a better way to do everything. There is freedom in what you write.</p>
@@ -38,8 +38,8 @@ export default {
   background-color: #1a1a1a;
   display: flex;
   justify-content: center;
-  padding-top: 25vh;
-  padding-bottom: 25vh;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
   padding-right: 9vw;
   padding-left: 9vw;
   position: relative;

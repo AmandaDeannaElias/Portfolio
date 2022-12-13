@@ -4,6 +4,7 @@
   <PortfolioBio/>
   <PortfolioAbout/>
   <PortfolioSkills/>
+  <PortfolioContact/>
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import PortfolioOpening from './components/PortfolioOpening.vue'
 import PortfolioBio from './components/PortfolioBio.vue'
 import PortfolioAbout from './components/PortfolioAbout.vue'
 import PortfolioSkills from './components/PortfolioSkills.vue'
+import PortfolioContact from './components/PortfolioContact.vue'
 
 export default {
   name: 'App',
@@ -21,6 +23,7 @@ export default {
     PortfolioBio,
     PortfolioAbout,
     PortfolioSkills,
+    PortfolioContact,
   },
   
   mounted: function(){

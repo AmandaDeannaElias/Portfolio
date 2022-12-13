@@ -3,11 +3,11 @@
       <img class="bg_image" src="/images/js2.jpg" />
       <div class="nav_menu">
         <div></div>
-        <h1 class="headings my_name zoom"><a href="#" rel="noopener">Amanda Elias</a></h1>
+        <h1 class="headings my_name zoom">Amanda Elias</h1>
         <ul>
           <li class="zoom"><a href="#about" rel="noopener">About</a></li>
-          <li class="zoom"><a href="#" rel="noopener">Skills</a></li>
-          <li class="zoom"><a href="#" rel="noopener">Contact</a></li>
+          <li class="zoom"><a href="#skills" rel="noopener">Skills</a></li>
+          <li class="zoom"><a href="#contact" rel="noopener">Contact</a></li>
         </ul>
         <div class="speakers">
           <img id="speaker_off" v-if="musicPlaying" @click="musicOn()" height="20" src="/images/speaker_off.png"/>
@@ -38,6 +38,7 @@ export default {
         this.musicPlaying = false;
         this.audio.play();
         this.musicOff = true;
+        this.audio.loop = true;
       },
 
       musicPause(){
@@ -100,7 +101,7 @@ a {
     transform: scale(1, 1);
   }
   50% {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.5, 1.5);
   }
   100% {
     transform: scale(1, 1);
@@ -134,12 +135,33 @@ a:hover:after{
 }
 
 .my_name{
-  color: #dbd7d0;
   font-family: 'Marcellus', serif;
   margin-top: 0;
   margin-bottom:0;
   font-size:3em;
   font-weight: normal;
+  position: relative;
+  text-decoration: none;
+  color: #dbd7d0;
+  font-family: 'Marcellus', serif;
+  padding: 0 10px;
+  letter-spacing: 0.5px;
+  cursor: default;
+}
+
+.my_name:after{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  background-color: #dbd7d0;
+  transition: 0.3s;
+}
+
+.my_name:hover:after{
+  width: 100%;
 }
 
 .zoom {

@@ -2,7 +2,7 @@
     <div class="about_wrapper fade fadeOut" id="about">
       <div class="about_list_container">
         <div class="about_border">
-          <h3>About</h3>
+          <h3>About Me</h3>
           <div class="about_list">
             <p class="plus_sign">&#43;&nbsp; </p>
             <p> A woman in tech who loves her job</p>
@@ -47,7 +47,7 @@ export default {
 
 .about_wrapper{
   background-color: #1a1a1a;
-  padding-bottom: 30vh;
+  padding-bottom: 15vh;
   padding-right: 2vw;
   padding-left: 2vw;
 }

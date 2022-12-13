@@ -1,5 +1,5 @@
 <template>
-    <div class="skills_wrapper fade fadeOut">
+    <div id="skills" class="skills_wrapper fade fadeOut">
       <div class="h3_skills_section">
         <h3>Skills</h3>
       </div>
@@ -47,6 +47,81 @@
           </div>
         </div>
       </div>
+      <div class="two_card_rows">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="skill_name">Vue.js</div>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                 I love Vue.js. It's simple and reusable with its component based architecture allowing 
+                 everything to be developed in a single page. Bonus: I love how I can conditionally render 
+                 elements inline, it saves a lot of time.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="skill_name_long">WordPress</div>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                WordPress has become part of my daily code stack for the past year and a half. It's
+                user friendly and a great tool for businesses to be able to showcase 
+                and sell goods, services and more. Much of my WordPress experience includes WPBakery, Yellowpencil, 
+                Elementor, Contact Form 7, custom CSS and more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card_rows">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="skill_name_extra_long">PHP/Laravel</div>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                My back-end experience is heavily based in PHP and Laravel. I thoroughly enjoy using Laravel as it
+                 makes coding easier through its MVC architecture, migrations and easy API integration. As someone who creates APIs everyday,
+                  it's a feature I've grown to love.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="skill_name_full_length">API Development</div>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                APIs are incredibly useful. Whether its used internally or externally, it makes sending and recieving information
+                optimal. I currently use Laravel, Vue.js, Vanilla JS and WordPress to build, GET and POST my REST APIs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="skill_name">MySQL</div>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  Simple and straightforward. DBeaver is my weapon of choice at the moment.
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="other_skills_list">Other skills include: Git, jQuery and AWS</h3>
+      </div>
     </div>
 </template>
 
@@ -85,7 +160,7 @@ h3{
   line-height: 1em;
   padding-right: 2vw;
   padding-top: 2vw;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
 }
 
 .h3_column{
@@ -111,6 +186,14 @@ h3{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 10vh;
+}
+
+.two_card_rows{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10vh;
 }
 
 .flip-card-inner {
@@ -141,7 +224,6 @@ h3{
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding-right: 30px;
 }
 
 .flip-card-back {
@@ -155,7 +237,34 @@ h3{
 }
 
 .skill_name{
-  font-size: 4.5em;
+  font-size: 3.8em;
+  padding-right: 20px;
+}
+
+.skill_name_long{
+  font-size: 3.2em;
+  padding-right: 3px;
+}
+
+.skill_name_extra_long{
+  font-size: 2.8em;
+  padding-right: 3px;
+}
+
+.skill_name_full_length{
+  font-size: 2.4em;
+}
+
+.other_skills_list{
+  font-family: 'Marcellus', serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  color:#dbd7d0;
+  text-align:center;
+  line-height: 1em;
+  padding-right: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 5vh;
 }
 
 @keyframes fadeIn {
