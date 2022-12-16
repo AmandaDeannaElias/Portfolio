@@ -8,6 +8,7 @@
           <li class="zoom"><a href="#about" rel="noopener">About</a></li>
           <li class="zoom"><a href="#skills" rel="noopener">Skills</a></li>
           <li class="zoom"><a href="#contact" rel="noopener">Contact</a></li>
+          <li class="zoom"><a href="https://github.com/AmandaDeannaElias" target="_blank">Projects (Coming Soon)</a></li>
         </ul>
         <div class="speakers">
           <img id="speaker_off" v-if="musicPlaying" @click="musicOn()" height="20" src="/images/speaker_off.png"/>
@@ -61,7 +62,7 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 a {
@@ -130,7 +131,7 @@ a:hover:after{
   padding-top:10vh;
   padding-left:2vw;
   padding-right:2vw;
-  padding-bottom:10vh;
+  padding-bottom:5vh;
   
 }
 
@@ -175,6 +176,14 @@ a:hover:after{
 @media screen and (max-width: 1400px){
   .bg_image{
     height:180vh;
+  }
+}
+@media screen and (min-width: 1750px){
+  li{
+    font-size: 2.2em;
+  }
+  .my_name{
+    font-size: 3.5em;
   }
 }
 </style>

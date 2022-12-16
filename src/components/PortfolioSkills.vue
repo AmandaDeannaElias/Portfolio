@@ -1,5 +1,6 @@
 <template>
-    <div id="skills" class="skills_wrapper fade fadeOut">
+  <div id="skills" >
+    <div class="skills_wrapper fade fadeOut">
       <div class="h3_skills_section">
         <h3>Skills</h3>
       </div>
@@ -123,6 +124,7 @@
         <h3 class="other_skills_list">Other skills include: Git, jQuery and AWS</h3>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -131,14 +133,6 @@ export default {
   props: {
     msg: String
   },
-
-  mounted: function(){
-    
-  },
-
-  methods: {
-
-  }
 }
 </script>
 
@@ -148,7 +142,12 @@ export default {
 .skills_wrapper{
   padding-right: 2vw;
   padding-left: 2vw;
-  padding-bottom: 15vh;
+  padding-bottom: 5vh;
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
 }
 
 h3{
@@ -159,19 +158,7 @@ h3{
   text-align:center;
   line-height: 1em;
   padding-right: 2vw;
-  padding-top: 2vw;
   padding-bottom: 5vh;
-}
-
-.h3_column{
-  flex-direction: column;
-  border-right: 2px #dbd7d0 solid; 
-  border-top: 2px #dbd7d0 solid;
-  animation: fadeIn ease 9s;
-  -webkit-animation: fadeIn ease 9s;
-  -moz-animation: fadeIn ease 9s;
-  -o-animation: fadeIn ease 9s;
-  -ms-animation: fadeIn ease 9s;
 }
 
 .flip-card {
@@ -312,10 +299,6 @@ h3{
 }
 }
 
-.fadeOut{ 
-  opacity: 0; 
-}
-
 .fadeIn{ 
   opacity: 1; 
 }
@@ -324,4 +307,12 @@ h3{
   transition: 0.8s ease-in;
 }
 
+@media screen and (min-width: 1750px){
+  .card_rows{
+    justify-content: space-evenly;
+  }
+  h3{
+    font-size:4em;
+  }
+}
 </style>

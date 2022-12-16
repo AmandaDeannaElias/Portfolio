@@ -20,14 +20,6 @@ export default {
   props: {
     msg: String
   },
-
-  mounted: function(){
-    
-  },
-
-  methods: {
-
-  }
 }
 </script>
 
@@ -39,7 +31,7 @@ export default {
   display: flex;
   justify-content: center;
   padding-top: 10vh;
-  padding-bottom: 15vh;
+
   padding-right: 9vw;
   padding-left: 9vw;
   position: relative;
@@ -151,4 +143,15 @@ p{
   transition: 0.8s ease-in;
 }
 
+@media screen and (min-width: 1750px){
+  h4{
+    font-size:4em;
+  }
+  p{
+    font-size:1.7em;
+  }
+  .bio_wrapper{
+    padding-top: 25vh;
+  }
+}
 </style>

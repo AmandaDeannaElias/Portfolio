@@ -1,7 +1,14 @@
 <template>
     <div class="opening_wrapper fade fadeOut">
-      <div class="image_div image_animation">
-        <img src="/images/Toronto.jpg" alt="Toronto Landscape" title="Toronto Landscape"/>
+      <div class="wrap_masonry">
+        <div class="image_div image_animation">
+          <img src="/images/toronto5.jpg" width=375 alt="Toronto Landscape" id="toronto_landscape_image" title="Toronto Landscape"/>
+          <img src="/images/meatdesk.jpg" width=125 alt="Me smiling at my desk" id="me_at_desk_image" title="Toronto Landscape"/>
+        </div>
+        <div class="image_div_second image_animation">
+          <img src="/images/flowers.jpg" width=150 alt="White daffodils" id="flowers_image" title="Toronto Landscape"/>
+          <img src="/images/laptop.jpg" width=350 alt="A coffee with a macbook" id="laptop_image" title="Toronto Landscape"/>
+        </div>
       </div>
       <div class="h3_column">
         <h3 class="first_h3_animation"> Nice to see you here. </h3>
@@ -17,14 +24,6 @@ export default {
   props: {
     msg: String
   },
-
-  mounted: function(){
-    
-  },
-
-  methods: {
-
-  }
 }
 </script>
 
@@ -33,19 +32,48 @@ export default {
 
 .opening_wrapper{
   display: flex;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
   padding-bottom: 15vh;
   position: relative;
+}
+
+.wrap_masonry{
+  padding-left: 2vh;
+  padding-bottom: 2vh;
+  border-left: 2px #dbd7d0 solid; 
+  border-bottom: 2px #dbd7d0 solid;
+  width:60%;
 }
 
 .image_div{
   width: 100%;
   opacity: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 2vh;
+  padding-bottom: 2vh;
+}
+
+.image_div_second{
+  width: 100%;
+  opacity: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 2vh;
+  padding-bottom: 2vh;
 }
 
 .image_div img{
   opacity: 100%;
+}
+
+#me_at_desk_image{
+  margin-left: 2vw;
+}
+
+#laptop_image{
+  margin-left: 2vw;
 }
 
 .image_animation{
@@ -72,16 +100,15 @@ h3{
   border-right: 2px #dbd7d0 solid; 
   border-top: 2px #dbd7d0 solid;
   opacity: 100%;
+  width:40%;
 }
 
 img{
   float: left;
-  width: 90%;
-  opacity: 0.8;
-  padding-left: 2vh;
-  padding-bottom: 2vh;
-  border-left: 2px #dbd7d0 solid; 
-  border-bottom: 2px #dbd7d0 solid;
+  filter:grayscale(60%);
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
 }
 
 @keyframes fadeIn {
@@ -141,4 +168,25 @@ img{
   transition: 0.8s ease-in;
 }
 
+@media screen and (min-width: 1750px){
+  h3{
+    font-size:3.5em;
+  }
+  #toronto_landscape_image{
+    width: 550px;
+  }
+  #me_at_desk_image{
+    width: 175px;
+  }
+  #flowers_image{
+    width: 250px;
+  }
+  #laptop_image{
+    width: 475px;
+  }
+  .opening_wrapper{
+    padding-right: 10vw;
+    padding-left: 10vw;
+  }
+}
 </style>

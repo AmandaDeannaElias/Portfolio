@@ -31,14 +31,6 @@ export default {
   props: {
     msg: String
   },
-
-  mounted: function(){
-    
-  },
-
-  methods: {
-
-  }
 }
 </script>
 
@@ -50,6 +42,12 @@ export default {
   padding-bottom: 15vh;
   padding-right: 2vw;
   padding-left: 2vw;
+  padding-top: 15vh;
+    animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
 }
 
 .about_title{
@@ -92,6 +90,7 @@ img{
   border-top: 2px #dbd7d0 solid;
   padding-right: 2vh;
   padding-top: 2vh;
+  filter:grayscale(30%);
 }
 
 .plus_sign{
@@ -165,4 +164,25 @@ p{
   transition: 0.8s ease-in;
 }
 
+@media screen and (min-width: 1750px){
+  h3{
+    font-size:4em;
+    padding-bottom: 4vh;
+  }
+  p{
+    font-size:1.5em;
+  }
+  .bio_wrapper{
+    padding-top: 25vh;
+  }
+  .about_border{
+    height: 400px;
+  }
+  .about_list{
+    padding-bottom: 1vh;
+  }
+  img{
+    height: 400px;
+  }
+}
 </style>
